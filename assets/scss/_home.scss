@@ -1,0 +1,228 @@
+.story-container {
+    background: $secondary;
+    padding-top: 30px;
+    padding-bottom: 75px;
+
+    .story-content {
+        max-width: 560px;
+
+        .story-heading {
+            font-size: 20px;
+            font-weight: $font700;
+            line-height: 38.13px;
+            color: $black;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {      
+                font-size: 28px;
+            }
+        }
+
+        .story-para {
+            font-size: 16px;
+            font-weight: $font400;
+            line-height: 21.79px;
+        }
+
+        .story-more-btn {
+            margin-top: 20px;
+
+            .story-btn {
+                @include btn;
+            }
+        }
+    }
+}
+
+.drone-container {
+    background: $primary;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .drone-left {
+
+        .drone-img {
+            width: 100%;
+        }
+    }
+
+    .drone-right {
+        padding-left: 0;
+        margin-top: 30px;
+
+        @include media-breakpoint-up(md) {      
+            padding-left: 40px;
+            
+        }
+        .wing-heading {
+            font-size: 20px;
+            font-weight: $font700;
+            line-height: 38.13px;
+            color: $white;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {      
+                font-size: 28px;
+                
+            }
+        }
+
+        .drone-para {
+            font-size: 16px;
+            font-weight: $font400;
+            line-height: 21.79px;
+            color: $white;
+            margin-top: 20px;
+        }
+
+        .clientele-heading {
+            font-size: 20px;
+            font-weight: $font700;
+            line-height: 38.13px;
+            color: $white;
+            margin-top: 50px;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {      
+                font-size: 28px;
+                
+            }
+        }
+    }
+}
+
+.offer-container {
+    background: $secondary;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .offer-heading {
+        font-size: 28px;
+        font-weight: $font700;
+        line-height: 38.13px;
+        text-transform: uppercase;
+    }
+
+    .offer-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-down(md) {      
+            flex-direction: column; 
+        }
+
+        .offer {
+            margin-top: 20px;
+            margin-left: 0;
+
+            @include media-breakpoint-up(md) {      
+                margin-left: 40px;   
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            .offer-para {
+                position: relative;
+                margin-left: 50px;
+                font-size: 16px;
+                font-weight: $font400;
+                line-height: 21.79px;
+                margin-top: 34px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+                
+
+                &::before {
+                    position: absolute;
+                    content: url('../images/offer-tick.png');
+                    margin-left: -50px;
+
+                    
+                }
+            }
+        }
+    }
+
+    .learn-more-btn {
+        margin-top: 20px;
+
+        .more-btn {
+            background: $blue;
+            color: $white;
+            text-transform: uppercase;
+            padding: 11px 24px;
+            font-size: 14px;
+            font-weight: $font600;
+            line-height: 24.51px;
+
+            @include media-breakpoint-up(md) {      
+                font-size: 18px;  
+            }
+        }
+    }
+}
+
+.card-container {
+    background: $primary;
+    padding-top: 75px;
+    padding-bottom: 160px;
+
+    .card-heading {
+        font-size: 18px;
+        font-weight: $font700;
+        line-height: 38.13px;
+        color: $white;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(md) {      
+            font-size: 28px;  
+        }
+    }
+
+    .card-para {
+        font-size: 16px;
+        font-weight: $font400;
+        line-height: 21.79px;
+        color: $white;
+        max-width: 560px;
+        margin-top: 20px;
+    }
+
+    .card-content {
+        margin-top: 40px;
+
+        .main-card {
+            border: none;
+            margin-top: 30px;
+
+            @include media-breakpoint-up(md) {      
+                margin: 0;   
+            }
+
+            .card-img-top {
+                width: 100%;
+            }
+
+            .card-detail {
+                background: $darkblue;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+
+                .card-text {
+                    font-size: 16px;
+                    font-weight: $font400;
+                    line-height: 21.79px;
+                    color: $white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

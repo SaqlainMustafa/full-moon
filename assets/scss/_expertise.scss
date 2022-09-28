@@ -1,0 +1,205 @@
+.banner-img {
+    background-image: url('../images/banner-img-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 384px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .banner-content {
+        padding-top: 90px;
+
+        @include media-breakpoint-up(md) {      
+            padding-top: 120px;
+        }
+    }
+}
+
+.album-container {
+    background: $primary;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .album-left {
+
+        .album-heading {
+            font-size: 28px;
+            font-weight: $font700;
+            line-height: 38.13px;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        .album-para {
+            font-size: 16px;
+            font-weight: $font400;
+            line-height: 21.79px;
+            color: $white;
+            margin-top: 10px;
+        }
+
+        .album-content {
+            display: flex;
+            padding-top: 20px;
+            flex-direction: column;
+
+            @include media-breakpoint-up(md) {      
+                flex-direction: row;
+            }
+
+            
+            .album {
+                margin-left: 0;
+
+                @include media-breakpoint-up(md) {      
+                    margin-left: 30px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .album-text {
+                    font-size: 16px;
+                    font-weight: $font400;
+                    line-height: 21.79px;
+                    color: $white;
+                    position: relative;
+                    margin-left: 50px;
+                    margin-top: 25px;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: url('../images/album-tick.png');
+                        margin-left: -50px;
+                    }
+                }
+            }
+        }
+
+        .contact-btn {
+            margin-top: 29px;
+
+            .contact-us-btn {
+                @include btn-contact;
+            }
+        }
+
+    }
+
+    .album-right {
+
+        .album-img {
+            max-width: 100%;
+        }
+    }
+}
+
+.film-container {
+    background: $secondary;
+    padding-top: 38px;
+    padding-bottom: 38px;
+
+    .film-left-content {
+        margin-right: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-right: 8px;
+        }
+
+        .film-left-img {
+            max-width: 100%;
+        }
+    }
+
+    .film-right-content {
+        max-width: 450px;
+        margin-left: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-left: 8px; 
+        }
+
+        .film-btn {
+            margin-top: 20px;
+
+            .film-contact-btn {
+                @include btn-contact;
+            }
+        }
+    }
+
+    .film-left-content-2 {
+        margin-right: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-left: 8px; 
+        }
+
+        .film-btn-2 {
+            margin-top: 20px;
+
+            .film-contact-btn-2 {
+                @include btn-contact;
+            }
+        }
+    }
+
+    .film-right-content-2 {
+        margin-left: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-left: 8px; 
+        }
+
+        .film-right-img {
+            max-width: 100%;
+        }
+    }
+}
+
+.talent-container {
+    background: $primary;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    .talent {
+        max-width: 450px;
+    }
+
+    .talent-left {
+        margin-right: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-right: 8px; 
+        }
+
+        .talent-btn {
+            margin-top: 20px;
+
+            .talent-contact-btn {
+                @include btn-contact;
+            }
+        }
+    }
+
+    .talent-right {
+        margin-left: 0;
+
+        @include media-breakpoint-up(md) {      
+            margin-left: 8px; 
+        }
+        .talent-btn {
+            margin-top: 20px;
+
+            .talent-contact-btn {
+                @include btn-contact;
+            }
+        }
+    }
+}

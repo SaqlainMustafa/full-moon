@@ -1,0 +1,96 @@
+.header {
+
+    .main-nav {
+        background: $darkblue;
+    }
+    .navbar {
+        width: 100%;
+        position: absolute;
+
+        @include media-breakpoint-up(md) {      
+            // padding: 23px 60px 23px 60px;
+        }
+
+        .navbar-logo {
+            width: 160px;
+
+            @include media-breakpoint-up(md) {
+                width: 260px;
+                max-width: 100%;
+            }
+        }
+
+        .navbar-toggler {
+            border-color: $white;
+            &:focus {
+                box-shadow: unset;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+        }
+
+        .nav-item {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-left: 0;
+            }
+
+            .nav-link {
+               position: relative;
+               font-size: 20px;
+               font-weight: $font400;
+               line-height: 140%;
+               color: $white;
+               padding-left: 0!important;
+               padding-right: 0!important;
+
+               &:hover{
+                    color: $white;
+                    border-bottom: 1px solid white;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .contact-us-list {
+            margin-top: 8px;
+            margin-bottom: 8px;       
+        }
+    }
+}
+
+.container-fluid {
+    padding: 0 !important;
+
+    .bg-img {
+        background-image: url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 960px;
+        display: flex;
+        align-items: center;
+
+        .banner-text {
+            max-width: 640px;
+            // margin-bottom: 0;
+            // margin-top: 70px;
+
+            // @include media-breakpoint-up(md) {
+            //     margin-bottom: 120px;
+            // }
+
+            .banner-more-btn {
+                margin-top: 20px;
+
+                .more-about-btn {
+                    @include btn;
+                }
+            }
+        }
+    }
+}
+
