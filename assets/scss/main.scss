@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins/breakpoints";
@@ -11,10 +12,10 @@
 
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     &::after {
         box-sizing: border-box;
@@ -27,43 +28,91 @@
 
 body {
     overflow-x: hidden;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 .banner-heading {
+    color: $white;
     font-size: 23px;
     font-weight: $font700;
     line-height: 54.47px;
     text-transform: uppercase;
-    color: $white;
+    margin-bottom: 0;
 
     @include media-breakpoint-up(md) {      
-       font-size: 40px;
+        font-size: 40px;
     }
 }
 
 .banner-para {
+    color: $white;
     font-size: 16px;
     font-weight: $font400;
     line-height: 21.79px;
-    color: $white;
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 35%;
-    right: 60px;
-    z-index: 99;
-    font-size: 18px;
-    background: none;
+.film-heading {
+    color: $blackblue;
+    font-size: 22px;
+    font-weight: $font700;
+    line-height: 38.13px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {      
+        font-size: 28px;
+    }
+
+}
+
+.film-para {
+    color: $blackblue;
+    font-size: 16px;
+    font-weight: $font400;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.talent-heading {
     color: $white;
-    border: 2px solid $white;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+    font-size: 22px;
+    font-weight: $font700;
+    line-height: 38.13px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {      
+        font-size: 28px;
+    }
+
+}
+
+.talent-para {
+    color: $white;
+    font-size: 16px;
+    font-weight: $font400;
+    line-height: 21.79px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.scroll-top-btn {
+    background: none;
     border-radius: 50px;
+    border: 2px solid $white;
+    bottom: 30%;
+    color: $white;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    height: 50px;
+    position: fixed;
+    right: 60px;
+    width: 50px;
+    z-index: 99;
 
     @include media-breakpoint-down(md) {      
         bottom: 8%;
@@ -71,33 +120,6 @@ body {
     }
 }
 
-.film-heading {
-    font-size: 28px;
-    font-weight: $font700;
-    line-height: 38.13px;
-    text-transform: uppercase;
-    color: $blackblue;
-}
-
-.film-para {
-    font-size: 16px;
-    font-weight: $font400;
-    line-height: 22px;
-    color: $blackblue;
-}
-
-.talent-heading {
-    font-size: 28px;
-    font-weight: $font700;
-    line-height: 38.13px;
-    color: $white;
-    text-transform: uppercase;
-}
-
-.talent-para {
-    font-size: 16px;
-    font-weight: $font400;
-    line-height: 21.79px;
-    color: $white;
-    margin-top: 20px;
+a, i {
+    transition: .3s;
 }

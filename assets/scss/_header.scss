@@ -6,10 +6,7 @@
     .navbar {
         width: 100%;
         position: absolute;
-
-        @include media-breakpoint-up(md) {      
-            // padding: 23px 60px 23px 60px;
-        }
+        z-index: 1;
 
         .navbar-logo {
             width: 160px;
@@ -39,15 +36,15 @@
             }
 
             .nav-link {
-               position: relative;
-               font-size: 20px;
-               font-weight: $font400;
-               line-height: 140%;
-               color: $white;
-               padding-left: 0!important;
-               padding-right: 0!important;
+                color: $white;
+                font-size: 20px;
+                font-weight: $font400;
+                line-height: 140%;
+                padding-left: 0!important;
+                padding-right: 0!important;
+                position: relative;
 
-               &:hover{
+                &:hover{
                     color: $white;
                     border-bottom: 1px solid white;
                     display: inline-block;
@@ -69,19 +66,29 @@
         background-image: url('../images/bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        max-width: 100%;
         height: 960px;
-        display: flex;
-        align-items: center;
+        max-width: 100%;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 31%;
+            bottom: 0;
+            background-size: cover;
+            background-image: url('../images/bg-rotate.png');
+        }
 
         .banner-text {
             max-width: 640px;
-            // margin-bottom: 0;
-            // margin-top: 70px;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
 
-            // @include media-breakpoint-up(md) {
-            //     margin-bottom: 120px;
-            // }
+            @include media-breakpoint-up(md) {
+                top: 45%;
+            }
 
             .banner-more-btn {
                 margin-top: 20px;
@@ -93,4 +100,3 @@
         }
     }
 }
-

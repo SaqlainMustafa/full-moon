@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/wowjs/css/libs/animate.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -50,8 +51,8 @@
         <div class="banner-img">
             <div class="container">
                 <div class="banner-content">
-                    <h1 class="banner-heading">Our Expertise</h1>
-                    <p class="banner-para">We create content that will movie you</p>
+                    <h1 class="banner-heading wow fadeInUp" data-wow-offset="50">Our Expertise</h1>
+                    <p class="banner-para wow fadeInDown" data-wow-offset="50">We create content that will movie you</p>
                 </div>
             </div>
         </div>
@@ -59,28 +60,32 @@
     <div class="album-container">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-6 album-left">
-                    <h2 class="album-heading">Music Albums</h2>
-                    <p class="album-para">High-quality music that soothes the soul</p>
+                <div class="col-lg-5 col-md-6">
+                    <div class="album-left wow slideInLeft" data-wow-offset="50">
+                        <h2 class="album-heading">Music Albums</h2>
+                        <p class="album-para">High-quality music that soothes the soul</p>
 
-                    <div class="album-content">
-                        <div class="album">
-                            <p class="album-text">Songwriting</p>
-                            <p class="album-text">Recording</p>
-                            <p class="album-text">Music Production</p>
+                        <div class="album-content">
+                            <div class="album">
+                                <p class="album-text">Songwriting</p>
+                                <p class="album-text">Recording</p>
+                                <p class="album-text">Music Production</p>
+                            </div>
+                            <div class="album">
+                                <p class="album-text">Mixing and mastering</p>
+                                <p class="album-text">Sonic Branding</p>
+                                <p class="album-text">Video shooting</p>
+                            </div>
                         </div>
-                        <div class="album">
-                            <p class="album-text">Mixing and mastering</p>
-                            <p class="album-text">Sonic Branding</p>
-                            <p class="album-text">Video shooting</p>
+                        <div class="contact-btn">
+                            <button type="button" class="btn contact-us-btn">Contact Us</button>
                         </div>
-                    </div>
-                    <div class="contact-btn">
-                        <button type="button" class="btn contact-us-btn">Contact Us</button>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-6 mt-lg-0 mt-5 album-right">
-                    <img class="album-img" src="./assets/images/album-img.png">
+                <div class="col-lg-7 col-md-6 mt-lg-0 mt-5">
+                    <div class="album-right wow slideInRight" data-wow-offset="50">
+                        <img class="album-img" src="./assets/images/album-img.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,12 +95,12 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <div class="film-left-content">
+                    <div class="film-left-content wow slideInLeft" data-wow-offset="50">
                         <img class="film-left-img" src="./assets/images/film-left-img.png">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mt-lg-0 mt-5">
-                    <div class="film-right-content">
+                    <div class="film-right-content wow slideInRight" data-wow-offset="50">
                         <h2 class="film-heading">Short Films</h2>
                         <p class="film-para">We house storytellers, creators and technicians who are the kingpins of visualizing, 
                             narrating and producing stories.
@@ -106,12 +111,13 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row d-flex align-items-center mt-5">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="film-left-content-2">
-                                <h2 class="film-heading">Short Films</h2>
-                                <p class="film-para">We house storytellers, creators and technicians who are the kingpins of visualizing, 
-                                    narrating and producing stories.
+                    <div class="row film-content-2">
+                        <div class="col-lg-6 col-md-6 mt-lg-0 mt-5">
+                            <div class="film-left-content-2 wow slideInLeft" data-wow-offset="50">
+                                <h2 class="film-heading">Feature Films</h2>
+                                <p class="film-para">We combine the right aesthetics with impactful and 
+                                    compelling narratives to bring out a creative story. We strive to bring 
+                                    out gripping, ingenious, and empathetic tales..
                                 </p>
                                 <div class="film-btn-2">
                                     <button type="button" class="btn film-contact-btn-2">Contact Us</button>
@@ -119,7 +125,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 mt-lg-0 mt-5">
-                            <div class="film-right-content-2">
+                            <div class="film-right-content-2 wow slideInRight" data-wow-offset="50">
                                 <img class="film-right-img" src="./assets/images/film-right-img.png">
                             </div>
                         </div>
@@ -133,7 +139,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="talent-left talent">
+                    <div class="talent-left talent wow fadeInUp" data-wow-offset="50">
                         <h2 class="talent-heading">Featuring New Talent</h2>
                         <p class="talent-para">Your talent, our expertise!<br>
                             We focus on bringing fresh, unique talent on-screen to bring in new trends, add new 
@@ -145,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mt-md-0 mt-5">
-                    <div class="talent-right talent">
+                    <div class="talent-right talent wow fadeInDown" data-wow-offset="50">
                         <h2 class="talent-heading">Branding And Marketing</h2>
                         <p class="talent-para">We keep audiences entertained and your businesses booming. We bring together engaging, 
                             novel, memorable and effective chronicles that speak for brands
@@ -167,8 +173,8 @@
                         <img class="footer-logo" src="./assets/images/footer-logo-img.png">
                     </div>
                     <div class="footer">
-                        <p class="footer-center-text">+1(800) 532 1710</p>
-                        <p class="footer-center-text">contact@fullmoonmedia.com</p>
+                        <p class="footer-mbl-text">+1(800) 532 1710</p>
+                        <p class="footer-mail-text">contact@fullmoonmedia.com</p>
                     </div>
                     <div class="footer">
                         <ul class="social-icons">
@@ -184,10 +190,14 @@
     </footer>
 
     <!-- scroll back to top icon -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <button onclick="topFunction()" id="myBtn" class="scroll-top-btn" title="Go to top">
         <img src="./assets/images/scroll-arrow-img.png">
     </button>
 
+
+    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="./node_modules/wowjs/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>

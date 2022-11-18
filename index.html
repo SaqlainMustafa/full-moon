@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/wowjs/css/libs/animate.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap/scss/_mixins.scss" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header class="header">
@@ -66,7 +67,7 @@
     <div class="story-container">
         <div class="container">
             <div class="row">
-               <div class="story-content">
+                <div class="story-content  wow slideInLeft" data-wow-offset="50">
                     <h2 class="story-heading">A Confluence Of Story, Sound, Style And Scene</h2>
                     <p class="story-para">Our masterminds bring the most refined and visually appealing treat to your eyes with 
                         power-packed high-end technology and creativity that gives you a beautiful viewing 
@@ -84,12 +85,12 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <div class="drone-left">
+                    <div class="drone-left wow slideInLeft" data-wow-offset="50">
                         <img class="drone-img" src="./assets/images/drone-img.png">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="drone-right">
+                    <div class="drone-right wow slideInRight" data-wow-offset="50">
                         <h2 class="wing-heading">Our Wings Fly Beyond Borders</h2>
                         <p class="drone-para">The team goes the extra mile to bring the best the world has to offer to your screens. Because we love what we do, we take it in our stride to deliver beyond expectations, engage the target audience and create long-lasting impressions.</p>
                         <h2 class="clientele-heading" >Our Clientele</h2>
@@ -101,7 +102,7 @@
     </div>
 
     <div class="offer-container">
-        <div class="container">
+        <div class="container wow fadeInUp" data-wow-offset="50">
             <h2 class="offer-heading">Our Offerings</h2>
             <div class="offer-content">
                 <div class="offer">
@@ -128,14 +129,18 @@
 
     <div class="card-container">
         <div class="container">
-            <h2 class="card-heading">When Technology Meets Creativity</h2>
-            <p class="card-para">We pride ourselves on our tech-backed expertise. By combining technology 
-                with creativity, we go beyond the ordinary and capture magnificent and accurate shots from 
-                distinct viewpoints. </p>
-            <div class="row card-content">
+            <div class="wow fadeInUp" data-wow-offset="50">
+                <h2 class="card-heading">When Technology Meets Creativity</h2>
+                <p class="card-para">We pride ourselves on our tech-backed expertise. By combining technology 
+                    with creativity, we go beyond the ordinary and capture magnificent and accurate shots from 
+                    distinct viewpoints. </p>
+            </div>
+            <div class="row card-content wow fadeInUp" data-wow-offset="50">
                 <div class="col-lg-3 col-md-6">
                     <div class="card main-card">
-                        <img src="./assets/images/card-img-1.png" class="card-img-top">
+                        <figure class="card-img-container">
+                            <img src="./assets/images/card-img-1.png" class="card-img-top">
+                        </figure>
                         <div class="card-body card-detail">
                             <p class="card-text">Stunning aerial shots</p>
                         </div>
@@ -143,7 +148,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="card main-card">
-                        <img src="./assets/images/card-img-2.png" class="card-img-top">
+                        <figure class="card-img-container">
+                            <img src="./assets/images/card-img-2.png" class="card-img-top">
+                        </figure>
                         <div class="card-body card-detail">
                             <p class="card-text">Stories that create an impact</p>
                         </div>
@@ -151,7 +158,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mt-lg-0 mt-md-5">
                     <div class="card main-card">
-                        <img src="./assets/images/card-img-4.png" class="card-img-top">
+                        <figure class="card-img-container">
+                            <img src="./assets/images/card-img-4.png" class="card-img-top">
+                        </figure>
                         <div class="card-body card-detail">
                             <p class="card-text">Photos that capture fleeting moments</p>
                         </div>
@@ -159,7 +168,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mt-lg-0 mt-md-5">
                     <div class="card main-card">
-                        <img src="./assets/images/card-img-3.png" class="card-img-top">
+                        <figure class="card-img-container">
+                            <img src="./assets/images/card-img-3.png" class="card-img-top">
+                        </figure>
                         <div class="card-body card-detail">
                             <p class="card-text">Videos that show emotion</p>
                         </div>
@@ -177,8 +188,8 @@
                         <img class="footer-logo" src="./assets/images/footer-logo-img.png">
                     </div>
                     <div class="footer">
-                        <p class="footer-center-text">+1(800) 532 1710</p>
-                        <p class="footer-center-text">contact@fullmoonmedia.com</p>
+                        <p class="footer-mbl-text">+1(800) 532 1710</p>
+                        <p class="footer-mail-text">contact@fullmoonmedia.com</p>
                     </div>
                     <div class="footer">
                         <ul class="social-icons">
@@ -194,11 +205,13 @@
     </footer>
 
         <!-- scroll back to top icon -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <button onclick="topFunction()" id="myBtn" class="scroll-top-btn" title="Go to top">
             <img src="./assets/images/scroll-arrow-img.png">
         </button>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="./node_modules/wowjs/dist/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

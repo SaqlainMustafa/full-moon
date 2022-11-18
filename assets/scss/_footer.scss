@@ -14,18 +14,29 @@
         }
 
         .footer {
-
-            .footer-center-text {
+            .footer-mbl-text {
                 color: $white;
                 text-align: center;
                 font-size: 18px;
                 font-weight: $font400;
                 line-height: 24.51px;
-                margin-top: 20px;
+                margin-bottom: 0;
+                margin-top: 10px;
 
                 @include media-breakpoint-up(md) {     
-                    margin-top: 0;  
+                    margin-top: 0; 
                 }
+                
+            }
+
+            .footer-mail-text {
+                color: $white;
+                text-align: center;
+                font-size: 18px;
+                font-weight: $font400;
+                line-height: 24.51px;
+                margin-top: 10px;
+                margin-bottom: 0;
             }
 
             .social-icons {

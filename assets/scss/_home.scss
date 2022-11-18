@@ -1,10 +1,10 @@
 .story-container {
     background: $secondary;
-    padding-top: 30px;
-    padding-bottom: 75px;
 
     .story-content {
         max-width: 560px;
+        position: relative;
+        top: -100px;
 
         .story-heading {
             font-size: 20px;
@@ -12,6 +12,7 @@
             line-height: 38.13px;
             color: $black;
             text-transform: uppercase;
+            margin-bottom: 20px;
 
             @include media-breakpoint-up(md) {      
                 font-size: 28px;
@@ -22,6 +23,7 @@
             font-size: 16px;
             font-weight: $font400;
             line-height: 21.79px;
+            margin-bottom: 20px;
         }
 
         .story-more-btn {
@@ -52,14 +54,15 @@
 
         @include media-breakpoint-up(md) {      
             padding-left: 40px;
-            
         }
+
         .wing-heading {
             font-size: 20px;
             font-weight: $font700;
             line-height: 38.13px;
             color: $white;
             text-transform: uppercase;
+            margin-bottom: 0;
 
             @include media-breakpoint-up(md) {      
                 font-size: 28px;
@@ -97,10 +100,15 @@
     padding-bottom: 75px;
 
     .offer-heading {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: $font700;
         line-height: 38.13px;
         text-transform: uppercase;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(md) {      
+            font-size: 28px;
+        }
     }
 
     .offer-content {
@@ -158,9 +166,15 @@
             font-size: 14px;
             font-weight: $font600;
             line-height: 24.51px;
+            transition: .3s ease;
+            border-radius: 0;
+
+            &:hover {
+                background-color: $darkblue;
+            }
 
             @include media-breakpoint-up(md) {      
-                font-size: 18px;  
+                font-size: 18px;
             }
         }
     }
@@ -168,8 +182,13 @@
 
 .card-container {
     background: $primary;
-    padding-top: 75px;
-    padding-bottom: 160px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    @include media-breakpoint-up(md) {      
+        padding-top: 75px;
+        padding-bottom: 160px;
+    }
 
     .card-heading {
         font-size: 18px;
@@ -199,12 +218,26 @@
             border: none;
             margin-top: 30px;
 
+            &:hover {
+                .card-img-container {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
             @include media-breakpoint-up(md) {      
                 margin: 0;   
             }
 
+            .card-img-container {
+                margin-bottom: 0;
+                overflow: hidden;
+            }
+
             .card-img-top {
-                width: 100%;
+                max-width: 100%;
+                transition: .4s;
             }
 
             .card-detail {
